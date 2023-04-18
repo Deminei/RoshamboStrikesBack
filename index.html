@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoshamboStrikesBack!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="vibrate-3">ROSHAMBO</h1>
+      <div>
+        <label for="player1-name">Player 1:</label>
+        <input
+          type="text"
+          id="player1-name"
+          style="border-radius: 5px; border-style: none"
+        />
+      </div>
+      <div style="padding-top: 1rem">
+        <label for="player2-name">Player 2:</label>
+        <input
+          type="text"
+          id="player2-name"
+          style="border-radius: 5px; border-style: none"
+        />
+      </div>
+      <button onclick="playGame()"><p class="heartbeat">Play Game</p></button>
+      <button onclick="resetScore()"><p>Reset Score</p></button>
+      <div id="result" class="result"></div>
+    </div>
+    <script src="roshamboShenanigan.js"></script>
+  </body>
+</html>
